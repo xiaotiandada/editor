@@ -10,7 +10,7 @@
         </div>
       </el-header>
       <el-container>
-        <el-aside width="450px">
+        <el-aside width="450px" id="test">
           <div class="tit"></div>
           <div class="run">
              <el-button type="primary" round>主要按钮</el-button>
@@ -21,7 +21,7 @@
           <div class="content fl" :class="{'toggleshow0' : isA,'togglehide0': !isA}">
             content
           </div>
-          <div class="browser ri" :class="{'toggleshow1' : isA,'togglehide1': !isA}">
+          <div class="browser fl" :class="{'toggleshow1' : isA,'togglehide1': !isA}">
             browser
           </div>
         </el-main>
@@ -139,7 +139,7 @@
     button{
       position: absolute;
       transform: translateY(50%);
-      right: 10%;
+      transform: translateX(50%);
     }
   }
   .el-aside .detail{
@@ -150,15 +150,15 @@
   .content {
     width: 50%;
     height: 100%;
-    background: #000;
     transition: width .3s;
     overflow: hidden;
+    background: #717171;
+    color: #fff;
   }
   
   .browser {
     width: 50%;
     height: 100%;
-    background: rgb(201, 10, 10);
     transition: width .3s;    
     overflow: hidden;
   }
