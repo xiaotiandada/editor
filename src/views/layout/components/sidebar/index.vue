@@ -36,7 +36,6 @@
 
 <style lang="less" rel="stylesheet/less">
     .el-aside {
-        background-color: #fff;
         color: #333;
         text-align: center;
         line-height: 200px;
@@ -44,6 +43,8 @@
         min-width: 300px;
         max-width: 600px;
         overflow: hidden;
+        padding: 0 8px 0 0;
+        background-color: #ababab;        
         .sidebar_tit {
             height: 70%;
             background: #fff;

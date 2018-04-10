@@ -40,12 +40,14 @@ export default {
 <style lang="less" rel="stylesheet/less">
 .el-container {
   min-width: 970px;
+  background: #fff;
 }
 .el-header {
   color: #333;
   text-align: center;
   line-height: 60px;
   border-bottom: 1px solid #dadada;
+  background: #fff;
   .logo {
     i {
       font-size: 20px;
