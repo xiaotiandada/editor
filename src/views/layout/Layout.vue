@@ -47,7 +47,20 @@
                     <div class="run">
                         <el-button>运行</el-button>
                     </div>
-                    <div class="detail"></div>
+                    <div class="detail">
+                        <div class="d_child d_child_add">
+                            <i class="el-icon-plus"></i>
+                        </div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                        <div class="d_child"></div>
+                    </div>
                 </div>
             </el-aside>
             <el-main>
@@ -117,7 +130,6 @@ export default {
     background: #fff;
     position: relative;
     line-height: 1;
-    text-align: right;
     .run {
       position: absolute;
       top: 0;
@@ -126,6 +138,7 @@ export default {
       height: 50px;
       line-height: 50px;
       background: #dedede;
+      text-align: right;
       button {
           margin-right: 10px;
       }
@@ -139,6 +152,22 @@ export default {
       bottom: 0;
       background: #c1c1c1;
       overflow: auto;
+      .d_child{
+          width: 80px;
+          height: 80px;
+          background: #909090;
+          border-radius: 3px;
+          float: left;
+          text-align: center;
+          margin: 10px 5px;
+          cursor: pointer;
+      }
+      .d_child_add{
+          .el-icon-plus{
+              font-size: 50px;
+              line-height: 80px;
+          }
+      }
     }
   }
 }
